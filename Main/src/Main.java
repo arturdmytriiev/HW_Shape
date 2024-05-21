@@ -9,55 +9,9 @@ public class Main {
      shapes[4] = new Quad();
      Print print = new Print();
      Shape circle = new Circle();
-     print.print(circle);
+     Shape rectangle = new Rectangle();
+     print.print(rectangle);
     }
 }
 
-abstract class  Shape
-{
-    public abstract String getName();
-}
 
-class Rectangle extends Shape
-{
-    @Override
-    public String getName() {
-        return "Rectangle";
-    }
-}
-class Circle extends Shape
-{
-    @Override
-    public String getName() {
-        return "Circle";
-    }
-}
-class Triangle extends Shape
-{
-    @Override
-    public String getName() {
-        return "Triangle";
-    }
-}
-class Square extends Shape
-{
-    @Override
-    public String getName() {
-        return "Square";
-    }
-}
-class Quad extends Shape
-{
-    @Override
-    public String getName() {
-        return "Quad";
-    }
-}
-
-class Print
-{
-    public void print(Shape shape)
-    {
-        System.out.println("This is: " + shape.getName());
-    }
-}
